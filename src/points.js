@@ -2,15 +2,20 @@ import React from "react";
 import Row from "react-bootstrap/Row";
 import { Col } from "react-bootstrap";
 
-function Points({ scores }) {
+function Points({ scores, pkey }) {
   return (
     <Row>
       <Col>
-        {scores.map((score) => {
+        {scores.map((score, i) => {
           if (score === undefined) {
-            return <div className="dot toBePlayed" />;
+            return <div key={`${pkey}_${i}`} className="dot toBePlayed" />;
           }
-          return <div className={score ? "dot win" : "dot loose"} />;
+          return (
+            <div
+              key={`${pkey}_${i}`}
+              className={score ? "dot win" : "dot loose"}
+            />
+          );
         })}
       </Col>
     </Row>

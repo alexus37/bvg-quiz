@@ -18,7 +18,20 @@
   background-color: rgb(255, 0, 0);
 }
 
+.gameStats {
+  z-index: 100;
+  background: white;
+  width: 400px;
+  height: 100vh;
+}
+
+.gameField {
+  overflow: hidden;
+  height: 100vh;
+}
+
 .background {
+  height: 100vh;
   background: url(bg.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;

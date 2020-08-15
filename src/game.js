@@ -3,9 +3,8 @@ import data from "./networkData.js";
 import BVGMap from "./BVGMap.js";
 import InitGameView from "./initGameView";
 import Points from "./points";
-import Container from "react-bootstrap/Container";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
+import FinishGameView from "./finishGameView";
+const GAME_ROUNDS = 2;
 
 const sampleAndRemove = (stationList) => {
   const index = Math.floor(stationList.length * Math.random());
@@ -21,12 +20,21 @@ function Game() {
   const [currentStation, setCurrentStation] = useState();
 
   const [gameState, setGameState] = useState("init");
-  const [points, setPoints] = useState(0);
+  const [points, setPoints] = useState({});
   const [rounds, setRounds] = useState(0);
+  const [nrPlayers, setNrPlayers] = useState(0);
 
   const onStationClick = (station) => {
-    if (station.name === currentStation.name) {
-      setPoints(points + 1);
+    const newPoints = { ...points };
+    const roundResult = station.name === currentStation.name;
+    const playerIndex = rounds % nrPlayers;
+    const roundIndex = Math.floor(rounds / nrPlayers);
+
+    newPoints[`player_${playerIndex}`][roundIndex] = roundResult;
+    setPoints(newPoints);
+
+    if (rounds + 1 === GAME_ROUNDS * nrPlayers) {
+      setGameState("finish");
     }
     setRounds(rounds + 1);
     const { sample, newStationList } = sampleAndRemove(allStations);
@@ -42,30 +50,49 @@ function Game() {
 
     setAllStations(newStationList);
     setCurrentStation(sample);
+
+    let newPoints = {};
+    for (var i = 0; i < playerCnt; i++) {
+      newPoints[`player_${i}`] = new Array(GAME_ROUNDS).fill(undefined);
+    }
+    console.log(newPoints);
+    setPoints(newPoints);
+    setNrPlayers(playerCnt);
     setGameState("playing");
   };
 
   if (gameState === "init") {
-    window.screen.orientation.unlock();
     return <InitGameView callback={initCallback} />;
   }
-  window.screen.orientation.lock("landscape");
+
+  if (gameState === "finish") {
+    return <FinishGameView points={points} />;
+  }
 
   return (
-    <Container>
-      <Row>
-        <Col md={4}>
-          <h5>Find the station: {currentStation.name}</h5>
-          <h5>
-            Points {points} / {rounds}
-            <Points scores={[true, false, true, undefined, undefined]} />
-          </h5>
-        </Col>
-        <Col md={8}>
+    <div style={{ marginLeft: 15 }}>
+      <div style={{ display: "flex" }}>
+        <div md={4} className="gameStats">
+          <h5>Find the station:</h5>
+          <h6>{currentStation.name}</h6>
+          {Object.keys(points).map((player) => {
+            return (
+              <>
+                <h5 key={player}>{player}</h5>
+                <Points
+                  key={`${player}_points`}
+                  pkey={`${player}_points`}
+                  scores={points[player]}
+                />
+              </>
+            );
+          })}
+        </div>
+        <div md={8} className="gameField">
           <BVGMap onStationClick={onStationClick} />
-        </Col>
-      </Row>
-    </Container>
+        </div>
+      </div>
+    </div>
   );
 }
 
