@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import panzoom from "panzoom";
 import "./App.css";
 
 import data from "./networkData.js";
@@ -81,8 +82,20 @@ function BVGMap({ onStationClick }) {
     return r;
   };
 
+  useEffect(() => {
+    var element = document.getElementById("bvgMap");
+    panzoom(element, {
+      onTouch: function (e) {
+        // `e` - is current touch event.
+
+        return false; // tells the library to not preventDefault.
+      },
+    });
+  });
+
   return (
     <svg
+      id="bvgMap"
       xmlns="http://www.w3.org/2000/svg"
       width={width}
       height={height}
