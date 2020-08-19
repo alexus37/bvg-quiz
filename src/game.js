@@ -4,7 +4,8 @@ import BVGMap from "./BVGMap.js";
 import InitGameView from "./initGameView";
 import Points from "./points";
 import FinishGameView from "./finishGameView";
-const GAME_ROUNDS = 2;
+
+const GAME_ROUNDS = 5;
 
 const sampleAndRemove = (stationList) => {
   const index = Math.floor(stationList.length * Math.random());
@@ -57,16 +58,19 @@ function Game() {
     }
     console.log(newPoints);
     setPoints(newPoints);
+    setRounds(0);
     setNrPlayers(playerCnt);
     setGameState("playing");
   };
+
+  const resetCallback = () => setGameState("init");
 
   if (gameState === "init") {
     return <InitGameView callback={initCallback} />;
   }
 
   if (gameState === "finish") {
-    return <FinishGameView points={points} />;
+    return <FinishGameView callback={resetCallback} points={points} />;
   }
 
   return (
@@ -77,14 +81,14 @@ function Game() {
           <h6>{currentStation.name}</h6>
           {Object.keys(points).map((player) => {
             return (
-              <>
+              <div key={`${player}_div`}>
                 <h5 key={player}>{player}</h5>
                 <Points
                   key={`${player}_points`}
                   pkey={`${player}_points`}
                   scores={points[player]}
                 />
-              </>
+              </div>
             );
           })}
         </div>

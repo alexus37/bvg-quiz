@@ -90,7 +90,10 @@ function BVGMap({ onStationClick }) {
 
         return false; // tells the library to not preventDefault.
       },
-    });
+    }).moveTo(
+      -225, // initial x position
+      -200
+    );
   });
 
   return (

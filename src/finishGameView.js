@@ -1,12 +1,15 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
+import Button from "react-bootstrap/Button";
 import { Trophy } from "react-bootstrap-icons";
+import { Heart } from "react-bootstrap-icons";
 import Confetti from "react-confetti";
+import useWindowSize from "react-use/lib/useWindowSize";
 
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-function FinishGameView({ points }) {
+function FinishGameView({ points, callback }) {
   const realPoints = {};
   Object.keys(points).forEach((player) => {
     realPoints[player] = points[player].filter((point) => point).length;
@@ -19,10 +22,10 @@ function FinishGameView({ points }) {
   const winnerIndex = realValueList.indexOf(Math.max(...realValueList));
 
   const winner = `player_${winnerIndex}`;
-
+  const { width, height } = useWindowSize();
   return (
     <div className="background">
-      <Confetti />
+      <Confetti width={width} height={height} />
       <Container>
         <Row>
           <Col md={{ span: 8, offset: 2 }}>
@@ -37,6 +40,17 @@ function FinishGameView({ points }) {
             >
               {tie ? <h1>That was a tie!</h1> : <h1>The Winner is {winner}</h1>}
               <Trophy color="royalblue" size={96} />
+              <Button
+                variant="success"
+                onClick={() => callback()}
+                style={{ marginTop: 20 }}
+              >
+                Play again?
+              </Button>
+              <div style={{ marginTop: 20, display: "flex" }}>
+                <p>made by Lea and Alex with </p>
+                <Heart color="red" style={{ marginTop: 5, marginLeft: 5 }} />
+              </div>
             </div>
           </Col>
         </Row>
