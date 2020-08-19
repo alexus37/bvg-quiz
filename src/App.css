@@ -53,7 +53,7 @@
 }
 #stations .station {
   fill: none;
-  stroke-width: 3;
+  stroke-width: 5;
 }
 #stations .station.interchange {
   fill: #fff;
