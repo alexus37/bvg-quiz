@@ -60,8 +60,20 @@
   stroke: #000;
   stroke-width: 0.5;
 }
-#stations .station.wifi {
-  /* fill: #f9e800; */
+@keyframes blink {
+  100%,
+  0% {
+    fill: #f00;
+    stroke: #f00;
+  }
+  60% {
+    fill: #000;
+    stroke: #000;
+  }
+}
+
+#stations .station.lastStation {
+  animation: blink 0.8s infinite;
 }
 
 #lines .line.S1,

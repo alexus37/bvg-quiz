@@ -4,7 +4,7 @@ import "./App.css";
 
 import data from "./networkData.js";
 
-function BVGMap({ onStationClick }) {
+function BVGMap({ onStationClick, lastStation }) {
   const width = 1120;
   const height = 765;
 
@@ -15,6 +15,8 @@ function BVGMap({ onStationClick }) {
       let cls = "station " + station.lines.join(" ");
       if (station.wifi) cls += " wifi";
       if (station.interchange) cls += " interchange";
+      if (lastStation && station.name === lastStation.name)
+        cls += " lastStation";
 
       r.push(
         <path
@@ -95,6 +97,35 @@ function BVGMap({ onStationClick }) {
       -200
     );
   });
+  let x = 0;
+  let y = 0;
+  if (lastStation) {
+    const splitShape = lastStation.shape.split(" ");
+    if (splitShape.length > 1) {
+      x = parseFloat(splitShape[0].substring(1));
+      const str = splitShape[1].toLowerCase();
+      let index = -1;
+      for (var i = 0; i < str.length; i++) {
+        if (
+          str[i] === "m" ||
+          str[i] === "l" ||
+          str[i] === "v" ||
+          str[i] === "h" ||
+          str[i] === "c" ||
+          str[i] === "s" ||
+          str[i] === "t" ||
+          str[i] === "a" ||
+          str[i] === "z"
+        ) {
+          index = i;
+          break;
+        }
+      }
+      y = parseFloat(str.substring(0, index));
+    } else {
+      console.log("error shape could not be split");
+    }
+  }
 
   return (
     <svg
@@ -107,6 +138,11 @@ function BVGMap({ onStationClick }) {
       <g id="lines">{renderLines()}</g>
       <g id="stations">{renderStations()}</g>
       <g id="labels">{renderLabels()}</g>
+      {lastStation && (
+        <text x={x} y={y} className="small">
+          {lastStation.name}
+        </text>
+      )}
     </svg>
   );
 }

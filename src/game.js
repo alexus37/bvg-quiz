@@ -9,9 +9,10 @@ const GAME_ROUNDS = 5;
 
 const sampleAndRemove = (stationList) => {
   const index = Math.floor(stationList.length * Math.random());
+  const sample = stationList[index];
   stationList.splice(index, 1);
   return {
-    sample: stationList[index],
+    sample,
     newStationList: stationList,
   };
 };
@@ -19,6 +20,7 @@ const sampleAndRemove = (stationList) => {
 function Game() {
   const [allStations, setAllStations] = useState([]);
   const [currentStation, setCurrentStation] = useState();
+  const [lastStation, setLastStation] = useState();
 
   const [gameState, setGameState] = useState("init");
   const [points, setPoints] = useState({});
@@ -39,6 +41,7 @@ function Game() {
     }
     setRounds(rounds + 1);
     const { sample, newStationList } = sampleAndRemove(allStations);
+    setLastStation(currentStation);
     setCurrentStation(sample);
     setAllStations(newStationList);
   };
@@ -93,7 +96,7 @@ function Game() {
           })}
         </div>
         <div md={8} className="gameField">
-          <BVGMap onStationClick={onStationClick} />
+          <BVGMap onStationClick={onStationClick} lastStation={lastStation} />
         </div>
       </div>
     </div>
