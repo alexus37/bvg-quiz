@@ -20,7 +20,6 @@ function BVGMap({ onStationClick, lastStation }) {
 
       r.push(
         <path
-          //onClick={() => alert(`${id}: ${station.name}`)}
           onClick={() => onStationClick(station)}
           key={`station-${id}`}
           id={`station-${id}`}

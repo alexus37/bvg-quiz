@@ -8,7 +8,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 function InitGameView({ callback }) {
-  const [mode, setMode] = useState("ABC");
+  const [mode, setMode] = useState("A");
   const [playerCnt, setPlayerCnt] = useState(1);
   return (
     <div className="background">
@@ -16,9 +16,8 @@ function InitGameView({ callback }) {
         <Row>
           <Col md={6}>
             <h1>BVGler</h1>
+            <h6>Ick bin ein BVGler!</h6>
             <p>
-              Ick bin ein BVGler
-              <br />
               Do you know your city? Test your knowledge about all the S- and
               U-Bahn stations of Berlin! After clicking START, you will be given
               a station name and you have to pin it on the BVG map. By coosing a
@@ -65,7 +64,19 @@ function InitGameView({ callback }) {
               <Button
                 variant="primary"
                 style={{ width: "100%" }}
-                onClick={() => callback({ mode, playerCnt })}
+                onClick={() => {
+                  let finalMode = [];
+                  if (mode === "A") {
+                    finalMode = ["A"];
+                  }
+                  if (mode === "AB") {
+                    finalMode = ["A", "AB"];
+                  }
+                  if (mode === "ABC") {
+                    finalMode = ["A", "AB", "ABC"];
+                  }
+                  callback({ mode: finalMode, playerCnt });
+                }}
               >
                 START
               </Button>

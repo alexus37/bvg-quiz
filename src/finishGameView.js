@@ -8,6 +8,10 @@ import useWindowSize from "react-use/lib/useWindowSize";
 
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+const playerNames = {
+  player_0: "Player 1",
+  player_1: "Player 2",
+};
 
 function FinishGameView({ points, callback }) {
   const realPoints = {};
@@ -38,7 +42,11 @@ function FinishGameView({ points, callback }) {
                 textAlign: "center",
               }}
             >
-              {tie ? <h1>That was a tie!</h1> : <h1>The Winner is {winner}</h1>}
+              {tie ? (
+                <h1>That was a tie!</h1>
+              ) : (
+                <h1>The Winner is {playerNames[winner]}</h1>
+              )}
               <Trophy color="royalblue" size={96} />
               <Button
                 variant="success"

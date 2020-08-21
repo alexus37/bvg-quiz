@@ -4,6 +4,7 @@ export default {
   stations: {
     "900000089301": {
       interchange: true,
+      zone: "AB",
       name: "Alt-Tegel",
       lines: ["U6", "S25"],
       shape:
@@ -11,6 +12,7 @@ export default {
     },
     "900000200000": {
       interchange: true,
+      zone: "ABC",
       name: "Henningsdorf",
       lines: ["S25"],
       shape:
@@ -18,6 +20,7 @@ export default {
     },
     "900000009202": {
       interchange: true,
+      zone: "AB",
       name: "Osloer Str.",
       lines: ["U9", "U8"],
       wifi: true,
@@ -26,6 +29,7 @@ export default {
     },
     "900000009102": {
       interchange: true,
+      zone: "AB",
       name: "Leopoldplatz",
       lines: ["U9", "U6"],
       wifi: true,
@@ -34,6 +38,7 @@ export default {
     },
     "900000143001": {
       interchange: true,
+      zone: "AB",
       name: "Karow",
       lines: ["S2"],
       shape:
@@ -41,12 +46,14 @@ export default {
     },
     "900000350160": {
       interchange: true,
+      zone: "ABC",
       name: "Bernau",
       lines: ["S2"],
       shape: "M746 15.734a1.844 1.844 0 1 1 3.688 0 1.844 1.844 0 1 1-3.688 0z",
     },
     "900000175001": {
       interchange: true,
+      zone: "AB",
       name: "Wuhletal",
       lines: ["S5", "U5"],
       wifi: true,
@@ -55,6 +62,7 @@ export default {
     },
     "900000320004": {
       interchange: true,
+      zone: "AB",
       name: "Strausberg",
       lines: ["S5"],
       shape:
@@ -62,6 +70,7 @@ export default {
     },
     "900000170004": {
       interchange: true,
+      zone: "AB",
       name: "Ahrensfelde",
       lines: ["S7"],
       shape:
@@ -69,6 +78,7 @@ export default {
     },
     "900000152001": {
       interchange: true,
+      zone: "AB",
       name: "Hohenschönhausen",
       lines: ["S7"],
       shape:
@@ -76,6 +86,7 @@ export default {
     },
     "900000171003": {
       interchange: true,
+      zone: "AB",
       name: "Springpfuhl",
       lines: ["S7"],
       shape:
@@ -83,6 +94,7 @@ export default {
     },
     "900000013102": {
       interchange: true,
+      zone: "A",
       name: "Kottbusser Tor",
       lines: ["U8", "U1"],
       wifi: true,
@@ -90,6 +102,7 @@ export default {
     },
     "900000003201": {
       interchange: true,
+      zone: "A",
       name: "Hauptbahnhof",
       lines: ["S5", "S7", "S75", "U55"],
       shape: "M469.6 313.39a2.5 2.5 0 1 1 5 .001 2.5 2.5 0 0 1-5-.002z",
@@ -97,12 +110,14 @@ export default {
     "900000058102": {
       interchange: true,
       name: "Priesterweg",
+      zone: "AB",
       lines: ["S2", "S25"],
       shape:
         "M500.553 581.374a1.838 1.838 0 1 1 3.676-.002 1.838 1.838 0 0 1-3.676.002z",
     },
     "900000245027": {
       interchange: true,
+      zone: "ABC",
       name: "Blankenfelde",
       lines: ["S2"],
       shape:
@@ -110,7 +125,8 @@ export default {
     },
     "900000044201": {
       interchange: true,
-      name: "Blissestr.",
+      zone: "A",
+      name: "Berliner Str.",
       lines: ["U9", "U7"],
       wifi: true,
       shape:
@@ -118,6 +134,7 @@ export default {
     },
     "900000042101": {
       interchange: true,
+      zone: "A",
       name: "Spichernstr.",
       lines: ["U9", "U3"],
       wifi: true,
@@ -126,6 +143,7 @@ export default {
     },
     "900000055102": {
       interchange: true,
+      zone: "A",
       name: "Bayerischer Platz",
       lines: ["U7", "U4"],
       wifi: true,
@@ -134,6 +152,7 @@ export default {
     },
     "900000041101": {
       interchange: true,
+      zone: "A",
       name: "Fehrbelliner Platz",
       lines: ["U7", "U3"],
       shape:
@@ -141,6 +160,7 @@ export default {
     },
     "900000024201": {
       interchange: true,
+      zone: "A",
       name: "Bismarckstr.",
       lines: ["U7", "U2"],
       shape:
@@ -148,6 +168,7 @@ export default {
     },
     "900000024106": {
       interchange: true,
+      zone: "A",
       name: "Messe Nord / ICC",
       lines: ["S41", "S42", "S46"],
       shape:
@@ -155,6 +176,7 @@ export default {
     },
     "900000026202": {
       interchange: true,
+      zone: "AB",
       name: "Kaiserdamm",
       lines: ["U2"],
       wifi: true,
@@ -163,6 +185,7 @@ export default {
     },
     "900000024202": {
       interchange: true,
+      zone: "A",
       name: "Wilmersdorfer Str.",
       lines: ["U7"],
       wifi: true,
@@ -171,6 +194,7 @@ export default {
     },
     "900000024101": {
       interchange: true,
+      zone: "A",
       name: "Charlottenburg",
       lines: ["S5", "S7", "S75"],
       shape:
@@ -178,6 +202,7 @@ export default {
     },
     "900000020202": {
       interchange: true,
+      zone: "A",
       name: "Beusselstr.",
       lines: ["S41", "S42"],
       shape:
@@ -185,7 +210,8 @@ export default {
     },
     "900000023203": {
       interchange: true,
-      name: "Kurfüstendamm",
+      zone: "A",
+      name: "Kurfürstendamm",
       lines: ["U9", "U1"],
       wifi: true,
       shape:
@@ -193,6 +219,7 @@ export default {
     },
     "900000100007": {
       interchange: true,
+      zone: "A",
       name: "Oranienburger Str.",
       lines: ["S1", "S2", "S25"],
       shape:
@@ -200,6 +227,7 @@ export default {
     },
     "900000020201": {
       interchange: true,
+      zone: "A",
       name: "Jungfernheide",
       lines: ["S41", "S42", "U7"],
       wifi: true,
@@ -208,6 +236,7 @@ export default {
     },
     "900000078101": {
       interchange: true,
+      zone: "A",
       name: "Hermannplatz",
       lines: ["U8", "U7"],
       wifi: true,
@@ -216,6 +245,7 @@ export default {
     },
     "900000260001": {
       interchange: true,
+      zone: "ABC",
       name: "Königs Wusterhausen",
       lines: ["S46"],
       shape:
@@ -223,6 +253,7 @@ export default {
     },
     "900000310004": {
       interchange: true,
+      zone: "ABC",
       name: "Erkner",
       lines: ["S3"],
       shape:
@@ -231,12 +262,14 @@ export default {
     "900000162001": {
       interchange: true,
       name: "Karlshorst",
+      zone: "AB",
       lines: ["S3"],
       shape:
         "M887.338 446.5a1.84 1.84 0 1 1 .001 3.679 1.84 1.84 0 0 1-.001-3.679z",
     },
     "900000012103": {
       interchange: true,
+      zone: "A",
       name: "Hallesches Tor",
       lines: ["U6", "U1"],
       wifi: true,
@@ -245,6 +278,7 @@ export default {
     },
     "900000001201": {
       interchange: true,
+      zone: "A",
       name: "Westhafen",
       lines: ["S41", "S42", "U9"],
       wifi: true,
@@ -253,6 +287,7 @@ export default {
     },
     "900000009104": {
       interchange: true,
+      zone: "A",
       name: "Wedding",
       lines: ["S41", "S42", "U6"],
       wifi: true,
@@ -261,6 +296,7 @@ export default {
     },
     "900000007104": {
       interchange: true,
+      zone: "A",
       name: "Nordbahnhof",
       lines: ["S1", "S2", "S25"],
       shape:
@@ -268,6 +304,7 @@ export default {
     },
     "900000008101": {
       interchange: true,
+      zone: "A",
       name: "Humboldthain",
       lines: ["S1", "S2", "S25"],
       shape:
@@ -275,6 +312,7 @@ export default {
     },
     "900000077106": {
       interchange: true,
+      zone: "A",
       name: "Sonnenallee",
       lines: ["S41", "S42"],
       shape:
@@ -282,6 +320,7 @@ export default {
     },
     "900000086102": {
       interchange: true,
+      zone: "AB",
       name: "Kurt-Schumacher-Platz",
       lines: ["U6"],
       wifi: true,
@@ -290,6 +329,7 @@ export default {
     },
     "900000200005": {
       interchange: true,
+      zone: "ABC",
       name: "Oranienburg",
       lines: ["S1"],
       shape:
@@ -298,6 +338,7 @@ export default {
     "900000018101": {
       interchange: true,
       name: "Jakob-Kaiser-Platz",
+      zone: "AB",
       lines: ["U7"],
       shape:
         "M272.5 237.339a1.839 1.839 0 1 1 3.677-.001 1.839 1.839 0 0 1-3.677.001z",
@@ -305,6 +346,7 @@ export default {
     "900000029302": {
       interchange: true,
       name: "Rathaus Spandau",
+      zone: "AB",
       lines: ["U7"],
       shape:
         "M56.1 269.19a1.839 1.839 0 1 1 3.677 0 1.839 1.839 0 0 1-3.677 0z",
@@ -312,6 +354,7 @@ export default {
     "900000029101": {
       interchange: true,
       name: "Spandau",
+      zone: "AB",
       lines: ["S5"],
       shape:
         "M50.7 274.39a1.839 1.839 0 1 1 3.677 0 1.839 1.839 0 0 1-3.677 0z",
@@ -319,12 +362,14 @@ export default {
     "900000062202": {
       interchange: true,
       name: "Rathaus Steglitz",
+      zone: "AB",
       lines: ["S1", "U9"],
       shape:
         "M356.543 612.788a1.839 1.839 0 1 1 3.677-.001 1.839 1.839 0 0 1-3.678 0z",
     },
     "900000057103": {
       interchange: true,
+      zone: "A",
       name: "Yorckstr.",
       lines: ["S1", "S2", "S25", "U7"],
       wifi: true,
@@ -333,6 +378,7 @@ export default {
     },
     "900000012101": {
       interchange: true,
+      zone: "A",
       name: "Anhalter Bahnhof",
       lines: ["S1", "S2", "S25"],
       shape:
@@ -340,6 +386,7 @@ export default {
     },
     "900000100020": {
       interchange: true,
+      zone: "A",
       name: "Potsdamer Platz",
       lines: ["S1", "S2", "S25", "U2"],
       wifi: true,
@@ -348,6 +395,7 @@ export default {
     },
     "900000100002": {
       interchange: true,
+      zone: "A",
       name: "Hackescher Markt",
       lines: ["S5", "S7", "S75"],
       shape:
@@ -355,6 +403,7 @@ export default {
     },
     "900000100025": {
       interchange: true,
+      zone: "A",
       name: "Brandenburger Tor",
       lines: ["S1", "S2", "S25", "U55"],
       shape:
@@ -362,6 +411,7 @@ export default {
     },
     "900000100001": {
       interchange: true,
+      zone: "A",
       name: "Friedrichstr.",
       lines: ["S1", "S2", "S25", "S5", "S7", "S75", "U6"],
       wifi: true,
@@ -370,6 +420,7 @@ export default {
     },
     "900000100003": {
       interchange: true,
+      zone: "A",
       name: "Alexanderplatz",
       lines: ["S5", "S7", "S75", "U8", "U5", "U2"],
       wifi: true,
@@ -378,6 +429,7 @@ export default {
     },
     "900000003102": {
       interchange: true,
+      zone: "A",
       name: "Bellevue",
       lines: ["S5", "S7", "S75"],
       shape:
@@ -385,6 +437,7 @@ export default {
     },
     "900000100004": {
       interchange: true,
+      zone: "A",
       name: "Jannowitzbrücke",
       lines: ["S5", "S7", "S75", "U8"],
       shape:
@@ -392,6 +445,7 @@ export default {
     },
     "900000120005": {
       interchange: true,
+      zone: "A",
       name: "Ostbahnhof",
       lines: ["S5", "S7", "S75"],
       shape:
@@ -399,6 +453,7 @@ export default {
     },
     "900000003103": {
       interchange: true,
+      zone: "A",
       name: "Tiergarten",
       lines: ["S5", "S7", "S75"],
       shape:
@@ -406,6 +461,7 @@ export default {
     },
     "900000023201": {
       interchange: true,
+      zone: "A",
       name: "Zoologischer Garten",
       lines: ["S5", "S7", "S75", "U9", "U2"],
       wifi: true,
@@ -414,6 +470,7 @@ export default {
     },
     "900000024203": {
       interchange: true,
+      zone: "A",
       name: "Savignyplatz",
       lines: ["S5", "S7", "S75"],
       shape:
@@ -421,6 +478,7 @@ export default {
     },
     "900000040101": {
       interchange: true,
+      zone: "A",
       name: "Halensee",
       lines: ["S41", "S42", "S46"],
       shape:
@@ -428,6 +486,7 @@ export default {
     },
     "900000044101": {
       interchange: true,
+      zone: "A",
       name: "Hohenzollerndamm",
       lines: ["S41", "S42", "S46"],
       shape:
@@ -435,6 +494,7 @@ export default {
     },
     "900000045102": {
       interchange: true,
+      zone: "A",
       name: "Heidelberger Platz",
       lines: ["S41", "S42", "S46"],
       wifi: true,
@@ -443,6 +503,7 @@ export default {
     },
     "900000058101": {
       interchange: true,
+      zone: "A",
       name: "Südkreuz",
       lines: ["S2", "S25", "S41", "S42", "S45", "S46"],
       shape:
@@ -450,6 +511,7 @@ export default {
     },
     "900000054104": {
       interchange: true,
+      zone: "A",
       name: "Schöneberg",
       lines: ["S1", "S41", "S42", "S45", "S46"],
       shape:
@@ -457,6 +519,7 @@ export default {
     },
     "900000044202": {
       interchange: true,
+      zone: "A",
       name: "Bundesplatz",
       lines: ["S41 S42 S45 S46 U9"],
       wifi: true,
@@ -465,6 +528,7 @@ export default {
     },
     "900000054105": {
       interchange: true,
+      zone: "A",
       name: "Innsbrucker Platz",
       lines: ["S41 S42 S45 S46 U4"],
       wifi: true,
@@ -473,6 +537,7 @@ export default {
     },
     "900000068201": {
       interchange: true,
+      zone: "A",
       name: "Tempelhof",
       lines: ["S41 S42 S45 S46 U6"],
       wifi: true,
@@ -481,6 +546,7 @@ export default {
     },
     "900000079221": {
       interchange: true,
+      zone: "A",
       name: "Hermannstr.",
       lines: ["S41 S42 S45 S46 S47 U8"],
       shape:
@@ -488,6 +554,7 @@ export default {
     },
     "900000078201": {
       interchange: true,
+      zone: "A",
       name: "Neukölln",
       lines: ["S41 S42 S45 S46 S47 U7"],
       wifi: true,
@@ -496,6 +563,7 @@ export default {
     },
     "900000190001": {
       interchange: true,
+      zone: "A",
       name: "Treptower Park",
       lines: ["S8 S85 S9 S41 S42"],
       shape:
@@ -503,6 +571,7 @@ export default {
     },
     "900000120001": {
       interchange: true,
+      zone: "A",
       name: "Frankfurter Allee",
       lines: ["S8 S85 S9 S41 S42 U5"],
       wifi: true,
@@ -511,6 +580,7 @@ export default {
     },
     "900000110012": {
       interchange: true,
+      zone: "A",
       name: "Storkower Str.",
       lines: ["S8 S85 S9 S41 S42"],
       shape:
@@ -518,6 +588,7 @@ export default {
     },
     "900000110004": {
       interchange: true,
+      zone: "A",
       name: "Landsberger Allee",
       lines: ["S8 S85 S9 S41 S42"],
       shape:
@@ -525,6 +596,7 @@ export default {
     },
     "900000120003": {
       interchange: true,
+      zone: "A",
       name: "Ostkreuz",
       lines: ["S3 S5 S7 S75 S8 S85 S9 S41 S42"],
       shape:
@@ -532,6 +604,7 @@ export default {
     },
     "900000110003": {
       interchange: true,
+      zone: "A",
       name: "Greifswalder Allee",
       lines: ["S8 S85 S9 S41 S42"],
       shape:
@@ -539,6 +612,7 @@ export default {
     },
     "900000110002": {
       interchange: true,
+      zone: "A",
       name: "Prenzlauer Allee",
       lines: ["S8 S85 S9 S41 S42"],
       shape:
@@ -546,6 +620,7 @@ export default {
     },
     "900000110001": {
       interchange: true,
+      zone: "A",
       name: "Schönhauser Allee",
       lines: ["S8 S85 S9 S41 S42 U2"],
       wifi: true,
@@ -554,6 +629,7 @@ export default {
     },
     "900000110011": {
       interchange: true,
+      zone: "AB",
       name: "Bornholmer Str.",
       lines: ["S1 S2 S25 S8 S85 S9"],
       shape:
@@ -561,6 +637,7 @@ export default {
     },
     "900000007102": {
       interchange: true,
+      zone: "A",
       name: "Gesundbrunnen",
       lines: ["S2", "S2", "S25", "S41", "S42", "U8"],
       shape:
@@ -568,6 +645,7 @@ export default {
     },
     "900000130002": {
       interchange: true,
+      zone: "AB",
       name: "Pankow",
       lines: ["S2", "S8", "S9", "U2"],
       wifi: true,
@@ -576,6 +654,7 @@ export default {
     },
     "900000130001": {
       interchange: true,
+      zone: "AB",
       name: "Pankow-Heinersdorf",
       lines: ["S2", "S8"],
       shape:
@@ -583,6 +662,7 @@ export default {
     },
     "900000142001": {
       interchange: true,
+      zone: "AB",
       name: "Blankenburg",
       lines: ["S2", "S8"],
       shape:
@@ -590,6 +670,7 @@ export default {
     },
     "900000130003": {
       interchange: true,
+      zone: "AB",
       name: "Wollankstr.",
       lines: ["S1", "S25", "S85"],
       shape:
@@ -597,6 +678,7 @@ export default {
     },
     "900000085201": {
       interchange: true,
+      zone: "AB",
       name: "Schönholz",
       lines: ["S1", "S25", "S85"],
       shape:
@@ -604,6 +686,7 @@ export default {
     },
     "900000084101": {
       interchange: true,
+      zone: "AB",
       name: "Wilhelmsruh",
       lines: ["S1", "S85"],
       shape:
@@ -611,6 +694,7 @@ export default {
     },
     "900000096101": {
       interchange: true,
+      zone: "AB",
       name: "Wittenau",
       lines: ["S1", "S85", "U8"],
       wifi: true,
@@ -619,6 +703,7 @@ export default {
     },
     "900000094101": {
       interchange: true,
+      zone: "AB",
       name: "Waidmannslust",
       lines: ["S1", "S85"],
       shape:
@@ -626,6 +711,7 @@ export default {
     },
     "900000200009": {
       interchange: true,
+      zone: "ABC",
       name: "Hohen Neuendorf",
       lines: ["S1", "S8"],
       shape:
@@ -633,6 +719,7 @@ export default {
     },
     "900000200008": {
       interchange: true,
+      zone: "ABC",
       name: "Birkenwerder",
       lines: ["S1", "S8"],
       shape:
@@ -640,6 +727,7 @@ export default {
     },
     "900000017104": {
       interchange: true,
+      zone: "A",
       name: "Möckernbrücke",
       lines: ["U7", "U1"],
       wifi: true,
@@ -648,6 +736,7 @@ export default {
     },
     "900000017101": {
       interchange: true,
+      zone: "A",
       name: "Mehringdamm",
       lines: ["U7", "U6"],
       wifi: true,
@@ -656,6 +745,7 @@ export default {
     },
     "900000096458": {
       interchange: true,
+      zone: "AB",
       name: "Karl-Bonhoeffer-Nervenklinik",
       lines: ["S25", "U8"],
       wifi: true,
@@ -664,6 +754,7 @@ export default {
     },
     "900000191002": {
       interchange: true,
+      zone: "AB",
       name: "Plänterwald",
       lines: ["S8", "S85", "S9"],
       shape:
@@ -672,12 +763,14 @@ export default {
     "900000191001": {
       interchange: true,
       name: "Baumschulenweg",
+      zone: "AB",
       lines: ["S8", "S85", "S9", "S45", "S46", "S47"],
       shape:
         "M846.065 536.391a1.342 1.342 0 1 1-1.897-1.898l.464-.464 3.937-3.938a1.345 1.345 0 0 1 2.284.961c0 .343-.131.687-.394.95l-4.394 4.39z",
     },
     "900000193001": {
       interchange: true,
+      zone: "AB",
       name: "Betriebsbahnhof Schöneweide",
       lines: ["S8", "S85", "S9", "S45", "S46", "S47"],
       shape:
@@ -686,6 +779,7 @@ export default {
     "900000193002": {
       interchange: true,
       name: "Adlershof",
+      zone: "AB",
       lines: ["S8", "S85", "S9", "S45", "S46", "S47"],
       shape:
         "M899.168 589.463a1.343 1.343 0 0 1-1.899-1.897l4.139-4.139a1.344 1.344 0 0 1 1.889 1.911l-4.129 4.125z",
@@ -693,6 +787,7 @@ export default {
     "900000192001": {
       interchange: true,
       name: "Schöneweide",
+      zone: "AB",
       lines: ["S8", "S85", "S9", "S45", "S46", "S47"],
       shape:
         "M859.21 553.795a1.344 1.344 0 0 1-1.898-1.899l7.044-7.043a1.345 1.345 0 0 1 1.888.014 1.339 1.339 0 0 1 0 1.898l-7.034 7.03z",
@@ -700,12 +795,14 @@ export default {
     "900000186001": {
       interchange: true,
       name: "Grünau",
+      zone: "AB",
       lines: ["S8", "S85", "S46"],
       shape:
         "M930.965 621.517a1.34 1.34 0 0 1-1.896 0 1.337 1.337 0 0 1 0-1.897l2.18-2.182a1.345 1.345 0 0 1 1.89 1.911l-2.174 2.168z",
     },
     "900000260004": {
       interchange: true,
+      zone: "ABC",
       name: "Eichwalde",
       lines: ["S8", "S46"],
       shape:
@@ -713,6 +810,7 @@ export default {
     },
     "900000260003": {
       interchange: true,
+      zone: "ABC",
       name: "Zeuthen",
       lines: ["S8", "S46"],
       shape:
@@ -721,12 +819,14 @@ export default {
     "900000195510": {
       interchange: true,
       name: "Altglienicke",
+      zone: "AB",
       lines: ["S9", "S45"],
       shape:
         "M893.72 645.826a1.342 1.342 0 1 1 1.898-1.898l2.119 2.119a1.346 1.346 0 0 1-.014 1.888 1.342 1.342 0 0 1-1.9 0l-2.103-2.11z",
     },
     "900000196001": {
       interchange: true,
+      zone: "AB",
       name: "Grünbergallee",
       lines: ["S9", "S45"],
       shape:
@@ -734,6 +834,7 @@ export default {
     },
     "900000260005": {
       interchange: true,
+      zone: "ABC",
       name: "Flughafen Berlin-Schönefeld",
       lines: ["S9", "S45"],
       shape:
@@ -742,6 +843,7 @@ export default {
     "900000160003": {
       interchange: true,
       name: "Nöldnerplatz",
+      zone: "AB",
       lines: ["S5", "S7", "S75"],
       shape:
         "M818.202 397.456a1.341 1.341 0 1 1 1.897-1.897l2.11 2.11a1.344 1.344 0 0 1-1.91 1.89l-2.097-2.103z",
@@ -749,6 +851,7 @@ export default {
     "900000160004": {
       interchange: true,
       name: "Lichtenberg",
+      zone: "AB",
       lines: ["S5", "S7", "S75", "U5"],
       wifi: true,
       shape:
@@ -756,6 +859,7 @@ export default {
     },
     "900000171002": {
       interchange: true,
+      zone: "AB",
       name: "Friedrichsfelde Ost",
       lines: ["S5", "S7", "S75"],
       shape:
@@ -763,6 +867,7 @@ export default {
     },
     "900000052201": {
       interchange: true,
+      zone: "AB",
       name: "Nikolassee",
       lines: ["S1", "S7"],
       shape:
@@ -770,6 +875,7 @@ export default {
     },
     "900000053301": {
       interchange: true,
+      zone: "AB",
       name: "Wannsee",
       lines: ["S1", "S7"],
       shape:
@@ -777,6 +883,7 @@ export default {
     },
     "900000100011": {
       interchange: true,
+      zone: "A",
       name: "Stadtmitte",
       lines: ["U6", "U2"],
       wifi: true,
@@ -785,6 +892,7 @@ export default {
     },
     "900000026207": {
       interchange: true,
+      zone: "A",
       name: "Westend",
       lines: ["S41", "S42", "S46"],
       shape:
@@ -792,6 +900,7 @@ export default {
     },
     "900000024102": {
       interchange: true,
+      zone: "A",
       name: "Westkreuz",
       lines: ["S5", "S7", "S75", "S41", "S42"],
       shape:
@@ -799,6 +908,7 @@ export default {
     },
     "900000083201": {
       interchange: true,
+      zone: "AB",
       name: "Rudow",
       lines: ["U7"],
       wifi: true,
@@ -807,6 +917,7 @@ export default {
     },
     "900000017103": {
       interchange: true,
+      zone: "A",
       name: "Gleisdreieck",
       lines: ["U2", "U1"],
       wifi: true,
@@ -815,12 +926,14 @@ export default {
     },
     "900000230003": {
       interchange: true,
+      zone: "ABC",
       name: "Griebnitzsee",
       lines: ["S7"],
       shape: "M62 701.734a1.844 1.844 0 1 1 3.688 0 1.845 1.845 0 1 1-3.688 0z",
     },
     "900000230999": {
       interchange: true,
+      zone: "ABC",
       name: "Potsdam Hbf",
       lines: ["S7"],
       shape: "M19 701.734a1.844 1.844 0 1 1 3.688 0 1.845 1.845 0 1 1-3.688 0z",
@@ -828,12 +941,14 @@ export default {
     "900000064301": {
       interchange: true,
       name: "Lichterfelde Ost",
+      zone: "AB",
       lines: ["S25"],
       shape:
         "M438 656.844a1.844 1.844 0 1 1 3.688 0 1.845 1.845 0 1 1-3.688 0z",
     },
     "900000056101": {
       interchange: true,
+      zone: "A",
       name: "Wittenbergplatz",
       lines: ["U3", "U2", "U1"],
       wifi: true,
@@ -842,6 +957,7 @@ export default {
     },
     "900000056102": {
       interchange: true,
+      zone: "A",
       name: "Nollendorfplatz",
       lines: ["U4", "U3", "U2", "U1"],
       wifi: true,
@@ -850,6 +966,7 @@ export default {
     },
     "900000120004": {
       interchange: true,
+      zone: "A",
       name: "Warschauer Str.",
       lines: ["S5", "S7", "S75", "U1"],
       shape:
@@ -857,180 +974,215 @@ export default {
     },
     "900000230000": {
       lines: ["S7"],
+      zone: "ABC",
       name: "Babelsberg",
       shape: "M41 701.7V698.7",
     },
     "900000170005": {
       lines: ["S7"],
+      zone: "AB",
       name: "Poelchaustr.",
       shape: "M913.3 282.6L911.2 280.5",
     },
     "900000170002": {
       lines: ["S7"],
+      zone: "AB",
       name: "Raoul-Wallenberg-Str.",
       shape: "M951.4 240.4L953.6 242.6",
     },
     "900000170003": {
       lines: ["S7"],
+      zone: "AB",
       name: "Mehrower Allee",
       shape: "M974.2 218L976.3 220.2",
     },
     "900000152002": {
       lines: ["S7"],
+      zone: "AB",
       name: "Gehrenseestr.",
       shape: "M855.8 240.9L853.6 243",
     },
     "9000001520021": {
       lines: ["S7"],
+      zone: "AB",
       name: "Wartenberg",
       shape: "M792 178L795 181",
     },
     "900000170001": {
       lines: ["S7"],
+      zone: "AB",
       name: "Mahrzahn",
       shape: "M934.3 261.6L932.1 259.5",
     },
     "900000048101": {
       lines: ["S7"],
+      zone: "AB",
       name: "Grunewald",
       shape: "M154.2 444.8L156.6 447.2",
     },
     "900000030202": {
       lines: ["S5"],
+      zone: "AB",
       name: "Stresow",
       shape: "M79 295L81 293L79 295z",
     },
     "900000025424": {
       lines: ["S5"],
+      zone: "AB",
       name: "Pichelsberg",
       shape: "M104 320L101.8 322.2",
     },
     "900000025321": {
       lines: ["S5"],
+      zone: "AB",
       name: "Olympiastadion",
       shape: "M129.3 345.4L127.1 347.5",
     },
     "900000026105": {
       lines: ["S5"],
+      zone: "AB",
       name: "Heerstr",
       shape: "M150.7 366.7L148.5 368.9",
     },
     "900000025423": {
       lines: ["S5"],
+      zone: "AB",
       name: "Messe Süd",
       shape: "M193 389.1V392.1",
     },
     "900000171001": {
       lines: ["S5"],
+      zone: "AB",
       name: "Biesdorf",
       shape: "M929.3 359V356",
     },
     "900000175002": {
       lines: ["S5"],
+      zone: "AB",
       name: "Kaulsdorf",
       shape: "M1001.5 358.7V355.7",
     },
     "900000320026": {
       lines: ["S5"],
+      zone: "ABC",
       name: "Birkenstein",
       shape: "M1066 358.7V355.7",
     },
     "900000320006": {
       lines: ["S5"],
+      zone: "ABC",
       name: "Fredersdorf",
       shape: "M1105 333.1L1107.3 335.3",
     },
     "900000320007": {
       lines: ["S5"],
+      zone: "ABC",
       name: "Neuenhagen",
       shape: "M1094.7 343.7L1096.9 345.8",
     },
     "900000320008": {
       lines: ["S5"],
+      zone: "ABC",
       name: "Hoppegarten",
       shape: "M1084.7 358.6V355.5",
     },
     "900000176001": {
       lines: ["S5"],
+      zone: "AB",
       name: "Mahlsdorf",
       shape: "M1032.3 358.6V355.5",
     },
     "900000320003": {
       lines: ["S5"],
+      zone: "ABC",
       name: "Hegermühle",
       shape: "M1112 255.4H1115",
     },
     "900000320002": {
       lines: ["S5"],
+      zone: "ABC",
       name: "Strausberg Stadt",
       shape: "M1112 241.7H1115",
     },
     "900000320001": {
       lines: ["S5"],
+      zone: "ABC",
       name: "Strausberg Nord",
       shape: "M1112 230H1115",
     },
     "900000320005": {
       lines: ["S5"],
+      zone: "ABC",
       name: "Petershagen Nord",
       shape: "M1112 319.6H1115.1",
     },
     "900000260002": {
       lines: ["S46"],
+      zone: "ABC",
       name: "Wildau",
       shape: "M980.3 667L978.2 669",
     },
     "900000192002": {
       lines: ["S47"],
+      zone: "AB",
       name: "Oberspree",
       shape: "M894.1 557.2V554.2",
     },
     "9000001920021": {
       lines: ["S47"],
+      zone: "AB",
       name: "Spindlersfeld",
       shape: "M926.1 557.2V554.2",
     },
     "900000077155": {
       lines: ["S47", "S46", "S45"],
+      zone: "AB",
       name: "Köllnische Heide",
       shape: "M784 529.7V526.7",
     },
     "900000023301": {
       lines: ["U1"],
+      zone: "A",
       name: "Uhlandstr.",
       wifi: true,
       shape: "M341.5 420V422.7",
     },
     "900000014102": {
       lines: ["U1"],
+      zone: "A",
       name: "Schlesisches Tor",
       shape: "M688.7 417.2L686.5 415.1",
     },
     "900000013103": {
       lines: ["U1"],
+      zone: "A",
       name: "Prinzenstr.",
       shape: "M603.3 422.7V419.6",
     },
     "900000005201": {
       lines: ["U1"],
+      zone: "A",
       name: "Kurfürstenstr.",
       wifi: true,
       shape: "M452 419.7V422.7",
     },
     "900000014101": {
       lines: ["U1"],
+      zone: "A",
       name: "Görlitzer Bahnhof",
       wifi: true,
       shape: "M671.2 425.7V422.6",
     },
     "900000023202": {
       lines: ["U3"],
+      zone: "A",
       name: "Augsburger Str.",
       wifi: true,
       shape: "M375.7 445.2L373.6 443",
     },
     "900000043101": {
       lines: ["U3"],
+      zone: "A",
       name: "Hohenzollernplatz",
       wifi: true,
       shape: "M340.8 472L343 474.2",
@@ -1038,23 +1190,27 @@ export default {
     "900000045101": {
       lines: ["U3"],
       name: "Rüdesheimer Platz",
+      zone: "AB",
       wifi: true,
       shape: "M275.2 538.6L277.3 540.7",
     },
     "900000051202": {
       lines: ["U3"],
       name: "Breitenbachplatz",
+      zone: "AB",
       wifi: true,
       shape: "M265 548.8L267 550.8",
     },
     "900000051302": {
       lines: ["U3"],
       name: "Podbielskiallee",
+      zone: "AB",
       wifi: true,
       shape: "M253.8 560.3L255.5 562",
     },
     "900000051303": {
       lines: ["U3"],
+      zone: "AB",
       name: "Dahlem-Dorf",
       wifi: true,
       shape: "M240.8 572.3L243 574.5",
@@ -1062,89 +1218,105 @@ export default {
     "900000051201": {
       lines: ["U3"],
       name: "Freie Universität",
+      zone: "AB",
       wifi: true,
       shape: "M227.8 585L230 587.2",
     },
     "900000051301": {
       lines: ["U3"],
+      zone: "AB",
       name: "Oskar-Helene-Heim",
       shape: "M215.8 597L218 599.2",
     },
     "900000050282": {
       lines: ["U3"],
       name: "Onkel Toms Hütte",
+      zone: "AB",
       shape: "M203.8 610L206 612.2",
     },
     "9000000502821": {
       lines: ["U3"],
+      zone: "AB",
       name: "Krumme Lanke",
       shape: "M193.5 623L197 626",
     },
     "900000110005": {
       lines: ["U2"],
+      zone: "A",
       name: "Senefelder Platz",
       shape: "M622.2 269.2H619",
     },
     "900000100015": {
       lines: ["U2"],
+      zone: "A",
       wifi: true,
       name: "Klosterstr.",
       shape: "M640.6 359.7L642.8 361.9",
     },
     "900000100014": {
       lines: ["U2"],
+      zone: "A",
       name: "Märkisches Museum",
       wifi: true,
       shape: "M626.3 374.1L628.5 376.3",
     },
     "900000100010": {
       lines: ["U2"],
+      zone: "A",
       name: "Mohrenstr.",
       wifi: true,
       shape: "M527.7 376.4V379.4",
     },
     "900000100013": {
       lines: ["U2"],
+      zone: "A",
       name: "Spittelmarkt",
       wifi: true,
       shape: "M610.9 382V378.9",
     },
     "900000110006": {
       lines: ["U2"],
+      zone: "A",
       name: "Eberswalder Str.",
       shape: "M622.2 251.8H619",
     },
     "900000100016": {
       lines: ["U2"],
+      zone: "A",
       name: "Rosa-Luxemburg-Platz",
       wifi: true,
       shape: "M622.3 287H619.3",
     },
     "900000130011": {
       lines: ["U2"],
+      zone: "AB",
       name: "Vinetastr.",
       wifi: true,
       shape: "M622.2 185.8H619",
     },
     "900000005252": {
       lines: ["U2"],
+      zone: "A",
       name: "Mendelssohn-Bartholdy-Park",
       shape: "M481 392.6H484",
     },
     "900000100012": {
       lines: ["U2"],
-      name: "Hausvogtelplatz",
+      zone: "A",
+      name: "Hausvogteiplatz",
       wifi: true,
       shape: "M580.4 382V378.9",
     },
     "900000022101": {
       lines: ["U2"],
+      zone: "A",
       name: "Sophie-Charlotte-Platz",
       wifi: true,
       shape: "M273.4 357.4V360.4",
     },
     "900000022201": {
       lines: ["U2"],
+      zone: "A",
       name: "Deutsche Oper",
       wifi: true,
       shape: "M316 359.8V362.9",
@@ -1152,172 +1324,203 @@ export default {
     "900000025203": {
       lines: ["U2"],
       name: "Olympastadion",
+      zone: "AB",
       shape: "M159.7 321.1L157.5 323.3",
     },
     "900000026201": {
       lines: ["U2"],
+      zone: "AB",
       name: "Theodor-Heuss-Platz",
       shape: "M203 360.3V363.3",
     },
     "900000026101": {
       lines: ["U2"],
+      zone: "AB",
       name: "Neu-Westend",
       wifi: true,
       shape: "M182.1 339.2L179.9 341.4",
     },
     "900000056104": {
       lines: ["U2"],
+      zone: "A",
       name: "Bülowstr.",
       wifi: true,
       shape: "M458.2 432.3V429.3",
     },
     "900000025202": {
       lines: ["U2"],
+      zone: "AB",
       name: "Ruhleben",
       shape: "M139.6 300.6L137.2 303",
     },
     "900000023101": {
       lines: ["U2"],
+      zone: "A",
       name: "Ernst-Reuter-Platz",
       wifi: true,
       shape: "M343 372L345.2 369.8",
     },
     "900000055101": {
       lines: ["U4"],
+      zone: "A",
       name: "Viktoria-Luise-Park",
       wifi: true,
       shape: "M411.8 461.8H415.3",
     },
     "900000054101": {
       lines: ["U4"],
+      zone: "A",
       name: "Rathaus Schöneberg",
       wifi: true,
       shape: "M412 508H415.6",
     },
     "900000120009": {
       lines: ["U5"],
+      zone: "A",
       name: "Samariterstr.",
       wifi: true,
       shape: "M734.5 370.3L736.7 367.9",
     },
     "900000100017": {
       lines: ["U5"],
+      zone: "A",
       name: "Schillingstr.",
       shape: "M694.5 326.2L692.3 328.3",
     },
     "900000120025": {
       lines: ["U5"],
+      zone: "A",
       name: "Weberwiese",
       wifi: true,
       shape: "M713.6 349.5L715.8 347.4",
     },
     "900000160005": {
       lines: ["U5"],
+      zone: "AB",
       name: "Magdalenenstr.",
       wifi: true,
       shape: "M810.7 374.3V377.3",
     },
     "900000171005": {
       lines: ["U5"],
+      zone: "AB",
       name: "Biesdorf-Süd",
       wifi: true,
       shape: "M922.6 396.1L920.4 394",
     },
     "900000175006": {
       lines: ["U5"],
+      zone: "AB",
       name: "Cottbusser Platz",
       wifi: true,
       shape: "M1008 310.7L1005.9 308.5",
     },
     "900000175005": {
       lines: ["U5"],
+      zone: "AB",
       name: "Kienberg",
       shape: "M993.1 325.9L990.9 323.7",
     },
     "900000175004": {
       lines: ["U5"],
+      zone: "AB",
       name: "Kaulsdorf-Nord",
       wifi: true,
       shape: "M976.9 342L974.7 339.8",
     },
     "900000171006": {
       lines: ["U5"],
+      zone: "AB",
       name: "Elsterwerdaer Platz",
       shape: "M940 379.2L937.8 377.1",
     },
     "900000161512": {
       lines: ["U5"],
       name: "Friedrichsfelde",
+      zone: "AB",
       wifi: true,
       shape: "M862.3 374.5V377.5",
     },
     "900000175015": {
       lines: ["U5"],
+      zone: "AB",
       name: "Louis-Lewin-Str.",
       shape: "M1039.1 279.8L1037 277.7",
     },
     "900000175007": {
       lines: ["U5"],
       name: "Hellersdorf",
+      zone: "AB",
       wifi: true,
       shape: "M1023.8 294.4L1021.7 292.3",
     },
     "900000120008": {
       lines: ["U5"],
+      zone: "A",
       name: "Frankfurter Tor",
       shape: "M723.6 359.7L725.8 357.5",
     },
     "900000161002": {
       lines: ["U5"],
       name: "Tierpark",
+      zone: "AB",
       wifi: true,
       shape: "M902.8 397.8L900.6 400",
     },
     "900000120006": {
       lines: ["U5"],
+      zone: "A",
       name: "Strausberger Platz",
       wifi: true,
       shape: "M704.8 336.3L702.6 338.5",
     },
     "900000175010": {
       lines: ["U5"],
+      zone: "AB",
       name: "Hönow",
       shape: "M1052 266.6L1050 264.5",
     },
     "900000003254": {
       lines: ["U55"],
+      zone: "A",
       name: "Bundestag",
       shape: "M476.2 333L478.4 330.7",
     },
     "900000088201": {
       lines: ["U6"],
+      zone: "AB",
       name: "Holzhauser Str.",
       shape: "M329.6 111.8L331.8 109.7",
     },
     "900000086101": {
       lines: ["U6"],
+      zone: "AB",
       name: "Otisstr.",
       shape: "M339 121.4L341.2 119.3",
     },
     "900000087101": {
       lines: ["U6"],
+      zone: "AB",
       name: "Scharnweberstr.",
       shape: "M350.6 132.2L352.8 130",
     },
     "900000011101": {
       lines: ["U6"],
+      zone: "AB",
       name: "Rehberge",
       wifi: true,
       shape: "M391.2 169.2L389 171.3",
     },
     "900000017102": {
       lines: ["U6"],
+      zone: "A",
       name: "Platz der LuftbrÜcke",
       wifi: true,
       shape: "M561 484.2H564.1",
     },
     "900000068101": {
       lines: ["U6"],
+      zone: "A",
       name: "Paradestr.",
       wifi: true,
       shape: "M561.2 502.8H564.2",
@@ -1325,70 +1528,82 @@ export default {
     "900000070101": {
       lines: ["U6"],
       name: "Westphalweg",
+      zone: "AB",
       wifi: true,
       shape: "M564.3 580.8H561.3",
     },
     "900000069271": {
       lines: ["U6"],
       name: "Ullsteinstr.",
+      zone: "AB",
       wifi: true,
       shape: "M564.3 568.1H561.3",
     },
     "900000068302": {
       lines: ["U6"],
       name: "Kaiserin-Augusta-Str.",
+      zone: "AB",
       wifi: true,
       shape: "M564.3 554.4H561.3",
     },
     "900000011102": {
       lines: ["U6"],
       name: "Afrikanische Str.",
+      zone: "AB",
       wifi: true,
       shape: "M376 158.5L378.2 156.3",
     },
     "900000009103": {
       lines: ["U6"],
       name: "Seestr.",
+      zone: "AB",
       wifi: true,
       shape: "M407 185.2L404.8 187.3",
     },
     "900000008102": {
       lines: ["U6"],
+      zone: "A",
       name: "Reinickendorfer Str.",
       wifi: true,
       shape: "M466 243.4L463.9 245.5",
     },
     "900000100501": {
       lines: ["U6"],
+      zone: "A",
       name: "Schwartzkopffstr.",
       shape: "M482.1 259.8L480 262",
     },
     "900000100009": {
       lines: ["U6"],
+      zone: "A",
       name: "Naturkundemuseum",
       wifi: true,
       shape: "M499.3 277L497 279",
     },
     "900000100019": {
       lines: ["U6"],
+      zone: "A",
       name: "Oranienburger Tor",
       wifi: true,
       shape: "M519.4 296.8L517.2 299",
     },
     "900000012102": {
       lines: ["U6"],
+      zone: "A",
       name: "Kochstr.",
       wifi: true,
       shape: "M564.3 403.2H561.3",
     },
     "900000068202": {
       lines: ["U6"],
+      zone: "AB",
       name: "Alt-Tempelhof",
       wifi: true,
       shape: "M564.3 539.4H561.3",
     },
     "900000100027": {
       lines: ["U6"],
+      zone: "A",
       name: "Französische Str.",
       wifi: true,
       shape: "M561.3 364.2H558.3",
@@ -1396,31 +1611,37 @@ export default {
     "900000070301": {
       lines: ["U6"],
       name: "Alt-Mariendorf",
+      zone: "AB",
       wifi: true,
       shape: "M564.1 593.3H561.3",
     },
     "900000088202": {
       lines: ["U6"],
+      zone: "AB",
       name: "Borsigwerke",
       shape: "M321 103.2L323.2 101.1",
     },
     "900000022202": {
       lines: ["U7"],
+      zone: "A",
       name: "Richard-Wagner-Platz",
       shape: "M299 328.8H302",
     },
     "900000023302": {
       lines: ["U7"],
+      zone: "A",
       name: "Adenauerplatz",
       wifi: true,
       shape: "M296 430H299",
     },
     "900000083101": {
       lines: ["U7"],
+      zone: "AB",
       name: "Zwickerau Damm",
       shape: "M745.7 672.1L747.8 670",
     },
     "900000083102": {
+      zone: "AB",
       lines: ["U7"],
       name: "Wutzkyalle",
       wifi: true,
@@ -1428,257 +1649,301 @@ export default {
     },
     "900000082201": {
       lines: ["U7"],
+      zone: "AB",
       name: "Lipschitzallee",
       wifi: true,
       shape: "M715.4 641.9L717.6 639.8",
     },
     "900000080201": {
       lines: ["U7"],
+      zone: "AB",
       name: "Blaschkoalle",
       wifi: true,
       shape: "M708.4 561H705.4",
     },
     "900000078102": {
       lines: ["U7"],
+      zone: "A",
       name: "Rathaus Neukölln",
       wifi: true,
       shape: "M694.4 479.4L692.2 481.6",
     },
     "900000016202": {
       lines: ["U7"],
+      zone: "A",
       name: "Südstern",
       wifi: true,
       shape: "M626.4 463.3V466.3",
     },
     "900000016101": {
       lines: ["U7"],
+      zone: "A",
       name: "Gneisenaustr.",
       wifi: true,
       shape: "M587 463.4V466.4",
     },
     "900000054102": {
       lines: ["U7"],
+      zone: "A",
       name: "Kleistpark",
       wifi: true,
       shape: "M459.9 490V493",
     },
     "900000054103": {
       lines: ["U7"],
+      zone: "A",
       name: "Eisenacher Str.",
       wifi: true,
       shape: "M436.7 495.3V492.3",
     },
     "900000041102": {
       lines: ["U7"],
+      zone: "A",
       name: "Blissestr.",
       wifi: true,
       shape: "M342.2 492.4V495.4",
     },
     "900000041201": {
       lines: ["U7"],
+      zone: "A",
       name: "Konstanzer Str.",
       shape: "M302.6 461.7L300.4 463.9",
     },
     "900000018102": {
       lines: ["U7"],
+      zone: "AB",
       name: "Halemweg",
       shape: "M264 231.8V228.8",
     },
     "900000035101": {
       lines: ["U7"],
+      zone: "AB",
       name: "Siemensdamm",
       shape: "M235 231.8V228.7",
     },
     "900000034102": {
       lines: ["U7"],
+      zone: "AB",
       name: "Haselhorst",
       wifi: true,
       shape: "M134 229V232",
     },
     "900000029301": {
       lines: ["U7"],
+      zone: "AB",
       name: "Altstadt Spandau",
       wifi: true,
       shape: "M83.7 243.1L85.9 245.2",
     },
     "900000033101": {
       lines: ["U7"],
+      zone: "AB",
       name: "Zitadelle",
       wifi: true,
       shape: "M104.3 231.7V228.7",
     },
     "900000036101": {
       lines: ["U7"],
+      zone: "AB",
       name: "Rohrdamm",
       wifi: true,
       shape: "M207.1 232V229",
     },
     "900000034101": {
       lines: ["U7"],
+      zone: "AB",
       name: "Paulsternstr.",
       wifi: true,
       shape: "M170.7 231.8V228.8",
     },
     "900000078103": {
       lines: ["U7"],
+      zone: "A",
       name: "Karl-Marx-Str.",
       shape: "M708 496.9H705",
     },
     "900000080202": {
       lines: ["U7"],
+      zone: "AB",
       name: "Grenzalle",
       wifi: true,
       shape: "M705.4 544H708.4",
     },
     "900000080401": {
       lines: ["U7"],
+      zone: "AB",
       name: "Parchimer Allee",
       wifi: true,
       shape: "M705.4 580H708.4",
     },
     "900000080402": {
       lines: ["U7"],
+      zone: "AB",
       name: "Britz-Süd",
       wifi: true,
       shape: "M705.4 601H708.4",
     },
     "900000082202": {
       lines: ["U7"],
+      zone: "AB",
       name: "Johannisthaler Chaussee",
       shape: "M705.4 618.5H708.4",
     },
     "900000019204": {
       lines: ["U7"],
+      zone: "A",
       name: "Mierendorffplatz",
       wifi: true,
       shape: "M302 291.8H299",
     },
     "900000079201": {
       lines: ["U8"],
+      zone: "A",
       name: "Leinestr",
       wifi: true,
       shape: "M656.2 504.5H653.2",
     },
     "900000016201": {
       lines: ["U8"],
+      zone: "A",
       name: "Schönleinstr.",
       wifi: true,
       shape: "M656.1 443.2H653.1",
     },
     "900000079202": {
       lines: ["U8"],
+      zone: "A",
       name: "Boddinstr.",
       wifi: true,
       shape: "M656.2 484.8H653.2",
     },
     "900000007110": {
       lines: ["U8"],
+      zone: "A",
       name: "Bernauer Str.",
       shape: "M569.5 259.7L571.7 257.6",
     },
     "900000007103": {
       lines: ["U8"],
+      zone: "A",
       name: "Voltastr.",
       wifi: true,
       shape: "M557.1 247L559.3 244.8",
     },
     "900000085104": {
       lines: ["U8"],
+      zone: "AB",
       name: "Paracelsus-Bad",
       wifi: true,
       shape: "M438.1 132.4L440.3 130.3",
     },
     "900000086160": {
       lines: ["U8"],
+      zone: "AB",
       name: "Lindauer Allee",
       wifi: true,
       shape: "M426.7 121.1L428.8 119",
     },
     "900000096410": {
       lines: ["U8"],
+      zone: "AB",
       name: "Rathaus Reinickendorf",
       wifi: true,
       shape: "M421 83.8L418.8 81.7",
     },
     "900000100008": {
       lines: ["U8"],
+      zone: "A",
       name: "Heinrich-Heine-Str.",
       wifi: true,
       shape: "M656.5 385.9H653.5",
     },
     "900000085203": {
       lines: ["U8"],
+      zone: "AB",
       name: "Residenzstr.",
       wifi: true,
       shape: "M448.5 142.9L450.7 140.7",
     },
     "900000085202": {
       lines: ["U8"],
+      zone: "AB",
       name: "Franz-Neumann-Platz",
       wifi: true,
       shape: "M459 153.4L461.2 151.2",
     },
     "900000100051": {
       lines: ["U8"],
+      zone: "A",
       name: "Weinmeisterstr.",
       wifi: true,
       shape: "M604.4 294L602.2 296.1",
     },
     "900000100023": {
       lines: ["U8"],
+      zone: "A",
       name: "Rosenthaler Platz",
       wifi: true,
       shape: "M588.6 277.8L586.4 279.9",
     },
     "900000009203": {
       lines: ["U8"],
+      zone: "AB",
       name: "Pankstr.",
       wifi: true,
       shape: "M507.9 193.9L505.7 196",
     },
     "900000013101": {
       lines: ["U8"],
+      zone: "A",
       name: "Moritzplatz",
       shape: "M653.2 405.2H656.2",
     },
     "900000009201": {
       lines: ["U9"],
+      zone: "AB",
       wifi: true,
       name: "Nauener Platz",
       shape: "M445.9 184.6L448.1 186.8",
     },
     "900000009101": {
       lines: ["U9"],
+      zone: "AB",
       name: "Amrumer Str.",
       wifi: true,
       shape: "M418.1 211.9L416 209.8",
     },
     "900000002201": {
       lines: ["U9"],
+      zone: "A",
       name: "Birkenstr.",
       wifi: true,
       shape: "M405 263H402",
     },
     "900000003104": {
       lines: ["U9"],
+      zone: "A",
       name: "Turmstr.",
       wifi: true,
       shape: "M405 297H402",
     },
     "900000003101": {
       lines: ["U9"],
+      zone: "A",
       name: "Hansaplatz",
       wifi: true,
       shape: "M402 362L404.2 364.2",
     },
     "900000043201": {
       lines: ["U9"],
-      name: "Günzelstr.",
+      zone: "A",
+      name: "Güntzelstr.",
       wifi: true,
       shape: "M358.3 475.2H361.6",
     },
     "900000061102": {
       name: "Friedrich-Wilhelm-Platz",
+      zone: "AB",
       lines: ["U9"],
       wifi: true,
       shape: "M358.1 552.3H355.1",
@@ -1686,226 +1951,271 @@ export default {
     "900000061101": {
       lines: ["U9"],
       name: "Walther-Schreiber-Platz",
+      zone: "AB",
       wifi: true,
       shape: "M354.7 570.6H357.7",
     },
     "900000062203": {
       lines: ["U9"],
       name: "Schlossstr.",
+      zone: "AB",
       shape: "M354.7 588.9H357.7",
     },
     "900000057104": {
       lines: ["S1"],
+      zone: "A",
       name: "Julius-Leber-Brücke",
       shape: "M464.6 507.2L466.7 509.4",
     },
     "900000200007": {
       lines: ["S1"],
       name: "Borgsdorf",
+      zone: "AB",
       shape: "M400.3 22.6L402.5 20.5",
     },
     "900000200006": {
       lines: ["S1"],
       name: "Lehnitz",
+      zone: "AB",
       shape: "M393.5 15.7L395.7 13.5",
     },
     "900000092201": {
       lines: ["S1"],
       name: "Frohnau",
+      zone: "AB",
       shape: "M431.8 54L429.6 56.1",
     },
     "900000093201": {
       lines: ["S1"],
+      zone: "AB",
       name: "Hermsdorf",
       shape: "M439.7 62L437.5 64.2",
     },
     "900000060101": {
       lines: ["S1"],
+      zone: "AB",
       name: "Friedenau",
       shape: "M412.3 559.3L414.4 561.5",
     },
     "900000066102": {
       lines: ["S1"],
+      zone: "AB",
       name: "Botanischer Garten",
       shape: "M337.8 633.6L335.7 631.5",
     },
     "900000049202": {
+      zone: "AB",
       lines: ["S1"],
       name: "Sundgauer Str.",
       shape: "M262.9 664.2V667.2",
     },
     "900000049201": {
+      zone: "AB",
       lines: ["S1"],
       name: "Zehlendorf",
       shape: "M218.6 666.8V663.8",
     },
     "900000050301": {
+      zone: "AB",
       lines: ["S1"],
       name: "Mexikoplatz",
       shape: "M190.5 637.9L188.3 640",
     },
     "900000050355": {
+      zone: "AB",
       lines: ["S1"],
       name: "Schlachtensee",
       shape: "M162.9 628.5V631.6",
     },
     "900000066101": {
+      zone: "AB",
       lines: ["S1"],
       name: "Lichterfelde West",
       shape: "M314.7 651.5L316.9 653.7",
     },
     "900000063101": {
+      zone: "AB",
       lines: ["S1"],
       name: "Feuerbach Str",
       shape: "M390.8 585L388.6 582.9",
     },
     "900000068301": {
+      zone: "AB",
       lines: ["S2"],
       name: "Attilastr.",
       shape: "M513.8 607L516 604.8",
     },
     "900000074202": {
+      zone: "AB",
       lines: ["S2"],
       name: "Schichauweg",
       shape: "M545.5 685.5H542.5",
     },
     "900000245028": {
       lines: ["S2"],
+      zone: "ABC",
       name: "Mahlow",
       shape: "M545.6 738H542.6",
     },
     "900000135001": {
+      zone: "AB",
       lines: ["S2"],
       name: "Buch",
       shape: "M705.8 57.5L708 59.7",
     },
     "900000350162": {
       lines: ["S2"],
+      zone: "ABC",
       name: "Röntgental",
       shape: "M717.1 46.4L719.3 48.6",
     },
     "900000350161": {
       lines: ["S2"],
+      zone: "ABC",
       name: "Bernau-Friedenstal",
       shape: "M737.3 26.3L739.4 28.5",
     },
     "900000350163": {
       lines: ["S2"],
+      zone: "ABC",
       name: "Zepernick",
       shape: "M727.4 36.2L729.6 38.4",
     },
     "900000073101": {
+      zone: "AB",
       lines: ["S2"],
       name: "Marienfelde",
       shape: "M537.3 626.9L535.1 629",
     },
     "900000072101": {
+      zone: "AB",
       lines: ["S2"],
       name: "Buckower Chaussee",
       shape: "M542.5 658.7H545.5",
     },
     "900000074201": {
+      zone: "AB",
       lines: ["S2"],
       name: "Lichtenrade",
       shape: "M542.5 717.5H545.5",
     },
     "900000220114": {
       lines: ["S25"],
+      zone: "ABC",
       name: "Teltow Stadt",
       shape: "M315.6 734.1V731.6",
     },
     "900000091205": {
+      zone: "AB",
       lines: ["S25"],
       name: "Schulzendorf",
       shape: "M298.9 71.4L301 69.2",
     },
     "900000091203": {
+      zone: "AB",
       lines: ["S25"],
       name: "Heiligensee",
       shape: "M287.7 60.5L289.8 58.3",
     },
     "900000096405": {
+      zone: "AB",
       lines: ["S25"],
       name: "Eichborndamm",
       shape: "M358 102.6V105.6",
     },
     "900000085105": {
+      zone: "AB",
       lines: ["S25"],
       name: "Alt-Reinickendorf",
       shape: "M449.8 102.6V105.4",
     },
     "900000063452": {
+      zone: "AB",
       lines: ["S25"],
       name: "Südende",
       shape: "M485.3 611.4L483.2 609.2",
     },
     "900000064256": {
+      zone: "AB",
       lines: ["S25"],
       name: "Osdorfer Str.",
       shape: "M407.5 685.2L409.7 687.4",
     },
     "900000064201": {
+      zone: "AB",
       lines: ["S25"],
       name: "Lichterfelde Süd",
       shape: "M383.6 713.5L381.5 711.4",
     },
     "900000067221": {
+      zone: "AB",
       lines: ["S25"],
       name: "Lankwitz",
       shape: "M464.8 632.4L462.7 630.3",
     },
     "900000160001": {
+      zone: "AB",
       lines: ["S3"],
       name: "Rummelsburg",
       shape: "M824.8 416L827 413.9",
     },
     "900000160002": {
+      zone: "AB",
       lines: ["S3"],
       name: "Betriebsbahnhof Rummelsburg",
       shape: "M843.3 434.3L845.5 432.1",
     },
     "900000183001": {
+      zone: "AB",
       lines: ["S3"],
       name: "Rahnsdorf",
       shape: "M1010.8 532.6L1013 530.4",
     },
     "900000182001": {
+      zone: "AB",
       lines: ["S3"],
       name: "Hirschgarten",
       shape: "M972.6 494.4L974.8 492.3",
     },
     "900000182002": {
+      zone: "AB",
       lines: ["S3"],
       name: "Friedrichshagen",
       shape: "M991.8 513.8L994 511.6",
     },
     "900000183002": {
+      zone: "AB",
       lines: ["S3"],
       name: "Wilhelmshagen",
       shape: "M1027.6 549.4L1029.8 547.2",
     },
     "900000180002": {
+      zone: "AB",
       lines: ["S3"],
       name: "Wuhlheide",
       shape: "M934.6 456.3L936.8 454.2",
     },
     "900000180001": {
+      zone: "AB",
       lines: ["S3"],
       name: "Köpenick",
       shape: "M953.7 475.4L955.8 473.3",
     },
     "900000200011": {
       lines: ["S8"],
+      zone: "ABC",
       name: "Bergfelde",
       shape: "M478 39.3V41.8",
     },
     "900000200012": {
       lines: ["S8"],
+      zone: "ABC",
       name: "Schönfliess",
       shape: "M530 39.3V41.8",
     },
     "900000200013": {
       lines: ["S8"],
+      zone: "ABC",
       name: "Mühlenbeck-Mönchmühle",
       shape: "M598 39.3V41.8",
     },

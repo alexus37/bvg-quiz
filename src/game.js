@@ -6,6 +6,10 @@ import Points from "./points";
 import FinishGameView from "./finishGameView";
 
 const GAME_ROUNDS = 5;
+const playerNames = {
+  player_0: "Player 1",
+  player_1: "Player 2",
+};
 
 const sampleAndRemove = (stationList) => {
   const index = Math.floor(stationList.length * Math.random());
@@ -37,18 +41,19 @@ function Game() {
     setPoints(newPoints);
 
     if (rounds + 1 === GAME_ROUNDS * nrPlayers) {
-      setGameState("finish");
+      setTimeout(() => setGameState("finish"), 1000);
+    } else {
+      setRounds(rounds + 1);
+      const { sample, newStationList } = sampleAndRemove(allStations);
+      roundResult ? setLastStation(undefined) : setLastStation(currentStation);
+      setCurrentStation(sample);
+      setAllStations(newStationList);
     }
-    setRounds(rounds + 1);
-    const { sample, newStationList } = sampleAndRemove(allStations);
-    setLastStation(currentStation);
-    setCurrentStation(sample);
-    setAllStations(newStationList);
   };
 
   const initCallback = ({ mode, playerCnt }) => {
-    const filteredList = Object.values(data.stations).filter(
-      (station) => station.zone === undefined || station.zone === mode
+    const filteredList = Object.values(data.stations).filter((station) =>
+      mode.includes(station.zone)
     );
     const { sample, newStationList } = sampleAndRemove(filteredList);
 
@@ -85,7 +90,7 @@ function Game() {
           {Object.keys(points).map((player) => {
             return (
               <div key={`${player}_div`}>
-                <h5 key={player}>{player}</h5>
+                <h5 key={player}>{playerNames[player]}</h5>
                 <Points
                   key={`${player}_points`}
                   pkey={`${player}_points`}
