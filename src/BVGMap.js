@@ -20,11 +20,66 @@ function BVGMap({ onStationClick, lastStation }) {
 
       r.push(
         <path
-          onClick={() => onStationClick(station)}
           key={`station-${id}`}
           id={`station-${id}`}
           dataid={id}
           className={cls}
+          d={station.shape}
+        />
+      );
+    }
+    return r;
+  };
+
+  const getStartPointFromShape = (shape) => {
+    let x = 0;
+    let y = 0;
+    const splitShape = shape.split(" ");
+    if (splitShape.length > 1) {
+      x = parseFloat(splitShape[0].substring(1));
+      const str = splitShape[1].toLowerCase();
+      let index = -1;
+      for (var i = 0; i < str.length; i++) {
+        if (
+          str[i] === "m" ||
+          str[i] === "l" ||
+          str[i] === "v" ||
+          str[i] === "h" ||
+          str[i] === "c" ||
+          str[i] === "s" ||
+          str[i] === "t" ||
+          str[i] === "a" ||
+          str[i] === "z"
+        ) {
+          index = i;
+          break;
+        }
+      }
+      y = parseFloat(str.substring(0, index));
+    } else {
+      console.log("error shape could not be split");
+    }
+    return [x, y];
+  };
+
+  const renderStationsClickCircles = () => {
+    const r = [];
+    for (let id of Object.keys(data.stations)) {
+      const station = data.stations[id];
+      const [x, y] = getStartPointFromShape(station.shape);
+
+      r.push(
+        <circle
+          onClick={() => onStationClick(station)}
+          key={`circle-station-${id}`}
+          id={`circle-station-${id}`}
+          dataid={id}
+          cx={x}
+          cy={y}
+          r="7"
+          strokeWidth="0"
+          fillOpacity="0"
+          fill="red"
           d={station.shape}
         />
       );
@@ -99,31 +154,7 @@ function BVGMap({ onStationClick, lastStation }) {
   let x = 0;
   let y = 0;
   if (lastStation) {
-    const splitShape = lastStation.shape.split(" ");
-    if (splitShape.length > 1) {
-      x = parseFloat(splitShape[0].substring(1));
-      const str = splitShape[1].toLowerCase();
-      let index = -1;
-      for (var i = 0; i < str.length; i++) {
-        if (
-          str[i] === "m" ||
-          str[i] === "l" ||
-          str[i] === "v" ||
-          str[i] === "h" ||
-          str[i] === "c" ||
-          str[i] === "s" ||
-          str[i] === "t" ||
-          str[i] === "a" ||
-          str[i] === "z"
-        ) {
-          index = i;
-          break;
-        }
-      }
-      y = parseFloat(str.substring(0, index));
-    } else {
-      console.log("error shape could not be split");
-    }
+    [x, y] = getStartPointFromShape(lastStation.shape);
   }
 
   return (
@@ -142,6 +173,7 @@ function BVGMap({ onStationClick, lastStation }) {
           {lastStation.name}
         </text>
       )}
+      <g id="clickCircles">{renderStationsClickCircles()}</g>
     </svg>
   );
 }
